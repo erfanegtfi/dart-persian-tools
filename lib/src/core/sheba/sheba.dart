@@ -50,9 +50,9 @@ class Sheba {
     var bank = banksInfo[bankCode];
     if (bank == null) return null;
     if (bank.isAccountNumberAvailable) {
-      final data = bank.process!(shebaCode);
-      bank.accountNumber = data.accountNumber;
-      bank.formattedAccountNumber = data.formattedAccountNumber;
+      final data = bank.process?.call(shebaCode);
+      bank.accountNumber = data?.accountNumber;
+      bank.formattedAccountNumber = data?.formattedAccountNumber;
     }
     bank.process = null;
     return bank;
