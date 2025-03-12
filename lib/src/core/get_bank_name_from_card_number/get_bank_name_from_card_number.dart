@@ -4,12 +4,12 @@ import 'package:persian_tools/src/core/get_bank_name_from_card_number/models.dar
 /// Checks the [cardNumber] is a valid bank card and returns the [Bank] info
 /// if it isn't a valid card or not related to a bank it will returns null
 Bank? getBankNameFromCardNumber(String cardNumber) {
-  if (cardNumber.length >= 6) {
+  if (cardNumber.length >= 8) {
     /// split the card number and cut the init code from it
-    final initCode = cardNumber.substring(0, 6);
+    final initCode = cardNumber.substring(0, 8);
 
     final findBank = bankInformation.firstWhere(
-      (element) => element?.initCode == initCode,
+      (element) => initCode.startsWith(element?.initCode ?? "") == true,
       orElse: () => null,
     );
 
