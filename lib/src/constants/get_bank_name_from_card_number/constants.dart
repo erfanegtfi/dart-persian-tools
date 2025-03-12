@@ -82,6 +82,10 @@ const bankInformation = <Bank?>[
     initCode: '621986',
   ),
   Bank(
+    name: 'بلو بانک',
+    initCode: '62198619',
+  ),
+  Bank(
     name: 'بانک سپه',
     initCode: '589210',
   ),
