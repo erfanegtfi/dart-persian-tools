@@ -78,12 +78,12 @@ const bankInformation = <Bank?>[
     initCode: '589463',
   ),
   Bank(
-    name: 'بانک سامان',
-    initCode: '621986',
-  ),
-  Bank(
     name: 'بلو بانک',
     initCode: '62198619',
+  ),
+  Bank(
+    name: 'بانک سامان',
+    initCode: '621986',
   ),
   Bank(
     name: 'بانک سپه',
