@@ -1,2 +1,3 @@
-fixed shahr bank card number error
-added blu bank card number
+Fixed shahr bank card number error
+<br>
+Added blu bank card number
